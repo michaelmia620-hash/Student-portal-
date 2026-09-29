@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results - Student Portal</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f6f9;
+    color:#172033;
+}
+
+header{
+    background:#0b3d91;
+    color:white;
+    padding:20px;
+}
+
+header h1{font-size:22px}
+header p{font-size:13px;margin-top:5px;opacity:.85}
+
+nav{
+    background:white;
+    padding:12px 20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+nav div{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    padding:9px 13px;
+    border-radius:8px;
+    font-size:13px;
+    white-space:nowrap;
+}
+
+nav a.active{
+    background:#0b3d91;
+    color:white;
+}
+
+.container{
+    max-width:1000px;
+    margin:25px auto;
+    padding:0 20px;
+}
+
+h2{margin-bottom:7px}
+.subtitle{
+    color:#777;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.result-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:650px;
+}
+
+th,td{
+    padding:13px 10px;
+    border-bottom:1px solid #eee;
+    text-align:left;
+    font-size:13px;
+}
+
+th{
+    background:#f7f8fa;
+    color:#444;
+}
+
+.grade{
+    font-weight:bold;
+}
+
+.summary{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.summary-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.summary-box small{
+    color:#888;
+    display:block;
+    margin-bottom:7px;
+}
+
+.summary-box strong{
+    font-size:24px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#999;
+    font-size:12px;
+}
+
+@media(max-width:600px){
+    .summary{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Student Portal</h1>
+    <p>Student Academic Management System</p>
+</header>
+
+<nav>
+    <div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="results.html" class="active">Results</a>
+        <a href="payments.html">Payments</a>
+        <a href="profile.html">Profile</a>
+        <a href="index.html">Logout</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h2>Academic Results</h2>
+    <p class="subtitle">2025/2026 Academic Session — First Semester</p>
+
+    <div class="result-card">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>Course Code</th>
+                    <th>Course Title</th>
+                    <th>Units</th>
+                    <th>Score</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>PAD 211</td>
+                    <td>Public Administration</td>
+                    <td>3</td>
+                    <td>78</td>
+                    <td class="grade">A</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>PAD 213</td>
+                    <td>Administrative Law</td>
+                    <td>3</td>
+                    <td>72</td>
+                    <td class="grade">A</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>PAD 215</td>
+                    <td>Local Government Administration</td>
+                    <td>3</td>
+                    <td>68</td>
+                    <td class="grade">B</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>PAD 217</td>
+                    <td>Development Administration</td>
+                    <td>3</td>
+                    <td>65</td>
+                    <td class="grade">B</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>GST 211</td>
+                    <td>Communication in English</td>
+                    <td>2</td>
+                    <td>74</td>
+                    <td class="grade">A</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="summary">
+
+        <div class="summary-box">
+            <small>Semester GPA</small>
+            <strong>3.67</strong>
+        </div>
+
+        <div class="summary-box">
+            <small>CGPA</small>
+            <strong>3.58</strong>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Student Portal. Demo System.
+</footer>
+
+</body>
+  </html>
